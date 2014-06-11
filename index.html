@@ -1,0 +1,165 @@
+<html>
+<head>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js"></script>
+ <script src="js/modal.js"></script>
+ <script src="js/ko-modal.js"></script>
+ <link rel="stylesheet" href="css/modal.css"  />
+ <style>
+ 
+ .alert {
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.4), 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+  padding: 20px 12px;
+  position: relative;
+  text-align: center;
+  width: 316px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dbdbdb), color-stop(20%, #ffffff));
+  background: -webkit-linear-gradient(#dbdbdb 0%, #ffffff 20%);
+  background: -moz-linear-gradient(#dbdbdb 0%, #ffffff 20%);
+  background: -o-linear-gradient(#dbdbdb 0%, #ffffff 20%);
+  background: linear-gradient(#dbdbdb 0%, #ffffff 20%);
+}
+.alert p {
+  font-size: 0.8rem;
+  margin: 0 0 10px;
+}
+.close {
+  border: none;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url("css/images/alert-close.png") no-repeat;
+  position: absolute;
+  height: 28px;
+  right: -10px;
+  top: -10px;
+  width: 28px;
+}
+ </style>
+</head>
+<body>
+
+<h2>Single Popup</h2>
+<div id="example1">
+<p>Simple single popup</p>
+<button type="button" onclick="showModalExample1();">Show Popup</button>
+<div class="alert example1Popup" style="display: none;">
+     <button type="button" class="close">X</button>
+     <p>Popup Content</p>                    
+</div>
+</div>
+
+<script>
+
+function showModalExample1() {
+    $('.example1Popup').modal();
+}
+</script>
+
+<h2>Multiple Popups</h2>
+<div id="example1">
+<p>Multiple popup</p>
+<button type="button" onclick="showModalExample2();">Show Popup</button>
+<div class="alert example2Popup" style="display: none;">
+     <button type="button" class="close">X</button>
+     <p>Popup Content</p>           
+	<button type="button" onclick="showSecondModalExample2();">Show Second Popup</button>         
+</div>
+<div class="alert example2SecondPopup" style="display: none;">
+     <button type="button" class="close">X</button>
+     <p>Popup 2 Content</p>                   
+</div>
+</div>
+
+<script>
+
+function showSecondModalExample2() {
+    $('.example2SecondPopup').modal();
+}
+function showModalExample2() {
+    $('.example2Popup').modal();
+}
+</script>
+
+<h2>Popup With Close Funtions</h2>
+<div id="example1">
+<p>Simple single popup with onclose function</p>
+<button type="button" onclick="showModalExample3();">Show Popup</button>
+<div class="alert example3Popup" style="display: none;">
+     <button type="button" class="close">X</button>
+     <p>Popup Example 3 Content</p>                    
+</div>
+</div>
+
+<script>
+
+function showModalExample3() {
+    $('.example3Popup').modal({onClosed: function(){alert('I have been closed')}});
+}
+</script>
+
+<h2>Popup With Close Timeout</h2>
+<div id="example4">
+<p>Simple single popup which closes after 1 second</p>
+<button type="button" onclick="showModalExample4();">Show Popup</button>
+<div class="alert example4Popup" style="display: none;">
+     <button type="button" class="close">X</button>
+     <p>Popup Example 4 Content</p>                    
+</div>
+</div>
+
+<script>
+
+function showModalExample4() {
+    $('.example4Popup').modal({closeTimeOut: 1000});
+}
+</script>
+
+<h2>Multiple Popups</h2>
+<div id="example1">
+<p>Multiple popups that close all open popups when they are closed</p>
+<button type="button" onclick="showModalExample5();">Show Popup</button>
+<div class="alert example5Popup" style="display: none;">
+     <button type="button" class="close">X</button>
+     <p>Popup Example 5 Content</p>           
+	<button type="button" onclick="showSecondModalExample5();">Show Second Popup</button>         
+</div>
+<div class="alert example5SecondPopup" style="display: none;">
+     <button type="button" class="close">X</button>
+     <p>Popup Example 5 Content 2</p>                   
+</div>
+</div>
+
+<script>
+
+function showSecondModalExample5() {
+    $('.example5SecondPopup').modal({closeAll: true});
+}
+function showModalExample5() {
+    $('.example5Popup').modal({closeAll: true});
+}
+</script>
+
+<h2>Knockout Popup</h2>
+<div id="examplex">
+<p>Simple single popup</p>
+<button type="button" data-bind="click: showModal">Show Popup</button>
+<div class="alert" style="display: none;" data-bind="modal: modalVisible">
+     <button type="button" class="close">X</button>
+     <p>Popup Content</p>                    
+</div>
+</div>
+
+<script>
+
+function ExamplexViewModel() {
+    this.modalVisible = ko.observable(false);
+    this.showModal = function(){
+		this.modalVisible(true);
+	};
+}
+ko.applyBindings(new ExamplexViewModel(), document.getElementById('examplex'));
+</script>
+</body>
+</html>
