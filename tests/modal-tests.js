@@ -38,7 +38,7 @@ describe("Model Tests", function () {
         });
 
         afterEach(function () {
-            popup1.data('bs.modal').close();
+            popup1.data('dm.modal').close();
         });
         it("Then the popup should be visible ", function() {
             expect(popup1).toBeVisible();
@@ -103,7 +103,7 @@ describe("Model Tests", function () {
             });
 
             afterEach(function () {
-                popup2.data('bs.modal').close();
+                popup2.data('dm.modal').close();
             });
             
             it("Then the popup should be visible ", function () {
@@ -185,7 +185,7 @@ describe("Model Tests", function () {
         });
 
         afterEach(function () {
-            popup1.data('bs.modal').close();
+            popup1.data('dm.modal').close();
         });
         
         it("Then the popup should be visible ", function () {

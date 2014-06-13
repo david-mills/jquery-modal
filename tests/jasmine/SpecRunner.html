@@ -4,11 +4,8 @@
     <head>
         <title>Jasmine Spec Runner</title>
 
-        <link rel="shortcut icon" type="image/png" href="jasmine_favicon.png">
-        <link rel="stylesheet" type="text/css" href="jasmine.css">
-        
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/libs/jquery-1.7.2.min.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/libs/knockout-2.2.1.min.js"> </script>
+        <link rel="shortcut icon" type="image/png" href="jasmine_favicon.png" />
+        <link rel="stylesheet" type="text/css" href="jasmine.css" />
 
         <script type="text/javascript" src="jasmine.js"> </script>
         <script type="text/javascript" src="jasmine.extensions.js"> </script>
@@ -17,156 +14,19 @@
 
         <!-- include source files here... -->
         
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/libs/01.modernizr-2.6.2.min.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/libs/02.namespace.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/libs/03.cookiemanager.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/libs/04.querystringmanager.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/libs/string.format.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/01.events.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/01.common.js"> </script>
-        <script type="text/javascript" src="../tests/asos-store/js/setup/common-setup.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/02.currency.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/02.preferred-site.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-top/04.ipad-class.js"> </script>
-        
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/libs/02.jstorage.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/libs/03.jstorage-wrapper.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/libs/jquery-ui-1.8.20.min.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/libs/jquery.placeholder.min.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/libs/jquery.hover-intent.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/libs/modal.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/libs/jquery.number.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/02.search.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/03.sign-up-for-newsletter.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/04.cookie-disclaimer.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/05.knockout-customhandlers.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/06.knockout-classBindingProvider.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/07.minibag.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/08.minibag-bindings.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/09.minibag-viewmodel.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/09.minibag-analytics.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/10.userstate.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/11.userstate-bindings.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/12.userstate-viewmodel.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/13.search-suggest-bindings.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/14.search-suggest-viewmodel.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/15.currency-selector.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/16.currency-selector-bindings.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/17.currency-selector-viewmodel.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/18.site-suggest.js"> </script>
-        
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/recently-viewed/01.recentlyviewed-tracker.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/recently-viewed/02.recentlyviewed-carousel.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/recently-viewed/04.recentlyviewed.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/recently-viewed/08.recentlyviewed-bindings.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/recently-viewed/09.recentlyviewed-viewmodel.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-constants.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-refine-serializer.js"> </script>
-        
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-api.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-analytics-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-preloader.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-bindings.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-sorting-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-products-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-quickview-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-quickview-customhandlers.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-quickview-viewmodel.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-grid-selector-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-bookmark-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-refine-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-pager-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-pager-viewmodel.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-viewselector-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/search/searchresults-viewselector-viewmodel.js"> </script>
-        
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/shared-bottom/20.preferred-floor.js"> </script>
-    
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/analytics/01.bright-tag.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/analytics/02.bright-tag-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/analytics/03.bright-tag-fashion-news-controller.js"> </script>
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/analytics/05.bright-tag-script.js"> </script>
-        
-        <script type="text/javascript" src="../../Asos.Store.Assets/asos-store/js/mobile/mobile-chrome/06.minibag.js"> </script>
-    
-        <!-- includefixture builders here... -->
-        <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-fixture-builder.js"> </script>
-        <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-refine-fixture-builder.js"> </script>
-        <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/currency-selector-fixture-builder.js"> </script>
-        <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/minibag-fixture-builder.js"> </script>
-        <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/userstate-fixture-builder.js"> </script>
-        <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/search-suggest-fixture-builder.js"> </script>
-        <script type="text/javascript" src="../tests/asos-store/js/recently-viewed/recentlyviewed-fixture-builder.js"> </script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js"></script>
+        <script type="text/javascript" src="../../js/modal.js"> </script>
+        <script type="text/javascript" src="../../js/ko-modal.js"> </script>
+
     
 
 
-        <!-- include spec files here... --> <script type="text/javascript" src="../tests/asos-store/js/shared-top/libs/cookiemanager-tests.js"></script>
-       <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-bookmark-controller-tests.js"></script>
-       
-            <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-controller-tests.js"></script>
-             <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-refine-serializer-tests.js"></script> 
-          <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-refine-controller-tests.js"></script> 
-                 <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-sorting-controller-tests.js"></script>
-         <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-viewselector-controller-tests.js"></script>
-        <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-pager-controller-tests.js"></script> 
-           <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/search-suggest-binding-tests.js"></script>
-         <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/search-suggest-binding-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/knockout-custombindings-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/search-tests.js"></script>
-        <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-api-tests.js"></script>
-       <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-pager-viewmodel-tests.js"></script> 
-         <script type="text/javascript" src="../tests/asos-store/js/search/searchresults-viewselector-viewmodel-tests.js"></script>  
-
-           <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/userstate-binding-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/currency-selector-binding-tests.js"></script>
-
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/search-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/search-suggest-viewmodel-tests.js"></script> 
-            <script type="text/javascript" src="../tests/asos-store/js/shared-top/currency-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-top/common-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/userstate-tests.js"></script>
-       
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/knockout-custombindings-tests.js"></script>
+        <!-- include spec files here... --> 
+            <script type="text/javascript" src="../modal-tests.js"></script>
+            <script type="text/javascript" src="../ko-modal-tests.js"></script>
+           
    
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/cookie-disclaimer-tests.js"></script>
-
-          <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/search-suggest-viewmodel-tests.js"></script> 
-       
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/minibag-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/minibag-binding-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/minibag-viewmodel-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/basketlink-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/userstate-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/userstate-viewmodel-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/sign-up-for-newsletter-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/libs/jquery.hover-intent-tests.js"></script>
-    
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/currency-selector-binding-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/currency-selector-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/currency-selector-viewmodel-tests.js"></script>
-            
-            <script type="text/javascript" src="../tests/asos-store/js/shared-top/libs/querystringmanager-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-top/preferredsite-tests.js"></script>
-
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/site-suggest-tests.js"></script>
-         
-        
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/userstate-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/userstate-binding-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/userstate-viewmodel-tests.js"></script>
-            <script type="text/javascript" src="../tests/asos-store/js/shared-bottom/preferred-floor-tests.js"></script>
-            
-            <script type="text/javascript" src="../tests/asos-store/js/recently-viewed/recentlyviewed-tests.js"></script>
-        <script type="text/javascript" src="../tests/asos-store/js/recently-viewed/recentlyviewed-tracker-tests.js"></script>
-        <script type="text/javascript" src="../tests/asos-store/js/recently-viewed/recentlyviewed-carousel-tests.js"></script>
-        <script type="text/javascript" src="../tests/asos-store/js/recently-viewed/recentlyviewed-viewmodel-tests.js"></script>
-        <script type="text/javascript" src="../tests/asos-store/js/analytics/bright-tag-tests.js"></script>
-        <script type="text/javascript" src="../tests/asos-store/js/analytics/bright-tag-script-tests.js"></script>
-        <script type="text/javascript" src="../tests/asos-store/js/analytics/bright-tag-controller-tests.js"></script>
-        <script type="text/javascript" src="../tests/asos-store/js/analytics/bright-tag-fashion-news-controller-tests.js"></script>
-        
-        <script type="text/javascript" src="../tests/asos-store/js/mobile/minibag-tests.js"></script>
         <script type="text/javascript">
             (function () {
                 var jasmineEnv = jasmine.getEnv();
