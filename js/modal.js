@@ -63,7 +63,6 @@
 
                 this.open = true; 
                 this.$element.hide();
-                this.position();
                 this.$element.focus();
                 this.addOverLay();
                 this.addBindings();
